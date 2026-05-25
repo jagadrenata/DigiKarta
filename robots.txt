@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Block unnecessary paths
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://digikarta.web.id/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 2

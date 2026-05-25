@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="id">
+<!-- JSON-LD Local Business -->
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://digikarta.web.id/#business",
+        "name": "DigiKarta",
+        "image": "https://digikarta.web.id/og-image.jpg",
+        "url": "https://digikarta.web.id",
+        "telephone": "+6288989546234",
+        "email": "halo@digikarta.web.id",
+        "description": "DigiKarta adalah jasa pembuatan website profesional untuk UMKM dan bisnis di Indonesia.",
+        "priceRange": "Rp4.000.000 - Rp6.000.000",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Depok",
+            "addressRegion": "Yogyakarta",
+            "addressCountry": "ID"
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Indonesia"
+        },
+        "sameAs": [
+            "https://instagram.com/digikarta.web.id"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+6288989546234",
+            "contactType": "customer service",
+            "areaServed": "ID",
+            "availableLanguage": ["Indonesian"]
+        }
+    }
+</script>
+
+<!-- JSON-LD Service -->
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://digikarta.web.id/#service",
+        "serviceType": "Jasa Pembuatan Website UMKM",
+        "name": "Jasa Website DigiKarta",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "DigiKarta",
+            "url": "https://digikarta.web.id"
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Indonesia"
+        },
+        "audience": {
+            "@type": "BusinessAudience",
+            "audienceType": "UMKM"
+        },
+        "offers": [
+        {
+            "@type": "Offer",
+            "name": "Paket Standar",
+            "price": "4000000",
+            "priceCurrency": "IDR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://digikarta.web.id/#harga"
+        },
+        {
+            "@type": "Offer",
+            "name": "Paket Pro",
+            "price": "6000000",
+            "priceCurrency": "IDR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://digikarta.web.id/#harga"
+        }],
+        "description": "Layanan pembuatan website modern dengan payment gateway, dashboard admin, e-commerce, domain, hosting, dan SEO dasar."
+    }
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="DigiKarta - Solusi Website Profesional untuk UMKM. Jasa pembuatan website murah dengan fitur lengkap: Payment Gateway, Dashboard Admin/User, E-commerce, Desain Custom, Domain & Hosting Include. Mulai dari 4 Juta.">
+    <meta name="keywords" content="jasa website umkm, pembuatan website murah, website toko online, payment gateway umkm, dashboard admin, desain website custom, DigiKarta">
+    <meta name="author" content="DigiKarta" <link rel="canonical" href="https://digikarta.web.id/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <meta name="theme-color" content="#A67B5B">>
+    <meta name="robots" content="index, follow">
+    <meta property="og:locale" content="id_ID">
+    <meta name="geo.region" content="ID-YO">
+    <meta name="geo.placename" content="Yogyakarta">
+    <meta name="language" content="Indonesian">
+    <title>DigiKarta | Solusi Website Profesional untuk UMKM</title>
+    
+    <meta property="og:title" content="DigiKarta | Solusi Website Profesional untuk UMKM">
+    <meta property="og:description" content="Jasa pembuatan website UMKM modern dengan payment gateway, dashboard admin, domain & hosting included.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://digikarta.web.id/">
+    <meta property="og:image" content="https://digikarta.web.id/og-image.jpg">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS override untuk warna coklat susu / cream -->
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #FFF9F0 0%, #FFF5EA 50%, #FFF9F0 100%);
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+        }
+        
+        /* Warna tema: coklat susu, cream, aksen coklat hangat */
+        .bg-cream {
+            background-color: #FFF9F0;
+        }
+        
+        .bg-milktea {
+            background-color: #D2B48C;
+        }
+        
+        .bg-coklat-muda {
+            background-color: #C4A27A;
+        }
+        
+        .text-coklat {
+            color: #5C3E1F;
+        }
+        
+        .text-coklat-tua {
+            color: #3E2A1F;
+        }
+        
+        .border-coklat-muda {
+            border-color: #D2B48C;
+        }
+        
+        .hover\:bg-coklat-muda:hover {
+            background-color: #B8956E;
+        }
+        
+        .btn-primary {
+            background-color: #A67B5B;
+            transition: all 0.2s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #8B5E3C;
+            transform: translateY(-2px);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .shadow-warm {
+            box-shadow: 0 10px 15px -3px rgba(92, 62, 31, 0.08), 0 4px 6px -2px rgba(92, 62, 31, 0.05);
+        }
+        
+        /* Navbar scroll effect */
+        .nav-scrolled {
+            background-color: rgba(255, 249, 240, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border-bottom: 1px solid rgba(210, 180, 140, 0.3);
+        }
+        
+        /* Animasi mobile menu */
+        .mobile-menu-enter {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease-out, opacity 0.2s ease;
+        }
+        
+        .mobile-menu-enter-active {
+            max-height: 380px;
+            opacity: 1;
+        }
+        
+        .highlight {
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+        }
+        
+        .highlight::before {
+            content: "";
+            position: absolute;
+            left: -5px;
+            right: -5px;
+            bottom: 5px;
+            height: 0.6em;
+            z-index: -1;
+            
+            background: url("images/highlight1.png") no-repeat center;
+            background-size: 100% 100%;
+        }
+        
+        /* Animasi fade in from bottom */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Animasi fade in from left */
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        /* Animasi fade in from right */
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .animate-on-scroll {
+            opacity: 0;
+        }
+        
+        .animate-on-scroll.animated {
+            animation-duration: 0.8s;
+            animation-fill-mode: forwards;
+        }
+        
+        .fade-in-up {
+            animation-name: fadeInUp;
+        }
+        
+        .fade-in-left {
+            animation-name: fadeInLeft;
+        }
+        
+        .fade-in-right {
+            animation-name: fadeInRight;
+        }
+        
+        /* Delay untuk animasi berurutan */
+        .delay-100 {
+            animation-delay: 0.1s;
+        }
+        
+        .delay-200 {
+            animation-delay: 0.2s;
+        }
+        
+        .delay-300 {
+            animation-delay: 0.3s;
+        }
+        
+        .delay-400 {
+            animation-delay: 0.4s;
+        }
+        
+        .delay-500 {
+            animation-delay: 0.5s;
+        }
+        
+        .delay-600 {
+            animation-delay: 0.6s;
+        }
+    </style>
+</head>
+
+<body class="text-coklat-tua">
+    
+    <!-- Navbar Component -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-cream/80 backdrop-blur-sm border-b border-coklat-muda/20 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="#home" class="text-2xl font-bold tracking-tight" style="color: #8B5E3C;">Digi<span style="color:#C4A27A;">Karta</span></a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-coklat hover:text-[#8B5E3C] transition-colors font-medium">Beranda</a>
+                    <a href="#fitur" class="text-coklat hover:text-[#8B5E3C] transition-colors font-medium">Fitur</a>
+                    <a href="#harga" class="text-coklat hover:text-[#8B5E3C] transition-colors font-medium">Harga</a>
+                    <a href="#cara-order" class="text-coklat hover:text-[#8B5E3C] transition-colors font-medium">Cara Order</a>
+                    <a href="#kontak" class="text-coklat hover:text-[#8B5E3C] transition-colors font-medium">Kontak</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menuBtn" class="text-coklat focus:outline-none" aria-label="Menu">
+                        <svg id="menuIconOpen" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        <svg id="menuIconClose" class="h-6 w-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile dropdown menu -->
+        <div id="mobileMenu" class="md:hidden bg-cream/95 backdrop-blur-sm border-t border-coklat-muda/20 overflow-hidden transition-all duration-300 max-h-0">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="#home" class="block px-3 py-2 rounded-md text-coklat hover:bg-[#F5E6D3] transition-colors">Beranda</a>
+                <a href="#fitur" class="block px-3 py-2 rounded-md text-coklat hover:bg-[#F5E6D3] transition-colors">Fitur</a>
+                <a href="#harga" class="block px-3 py-2 rounded-md text-coklat hover:bg-[#F5E6D3] transition-colors">Harga</a>
+                <a href="#cara-order" class="block px-3 py-2 rounded-md text-coklat hover:bg-[#F5E6D3] transition-colors">Cara Order</a>
+                <a href="#kontak" class="block px-3 py-2 rounded-md text-coklat hover:bg-[#F5E6D3] transition-colors">Kontak</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="pt-28 pb-16 md:pt-36 md:pb-20 px-4" style="background: linear-gradient(135deg, #FFF9F0 0%, #FFF2E6 50%, #FFF9F0 100%);">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
+            <div class="flex-1 text-center md:text-left animate-on-scroll fade-in-left">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-coklat-tua">Solusi <span class="highlight"> Website</span><span class="highlight"> Profesional</span> untuk UMKM</h1>
+                <p class="text-lg text-gray-600 mt-4 mb-6 max-w-xl md:mx-0 mx-auto">Jasa pembuatan website modern, dilengkapi Payment Gateway, Dashboard Admin & User, E-commerce lengkap, plus domain & hosting GRATIS. Harga ramah kantong.</p>
+                <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                    <a href="#kontak" class="btn-primary text-white px-6 py-3 rounded-lg font-semibold shadow-md inline-block">Konsultasi Gratis →</a>
+                    <a href="#harga" class="border border-[#C4A27A] text-coklat px-6 py-3 rounded-lg font-semibold hover:bg-[#F5E6D3] transition">Lihat Paket</a>
+                </div>
+                <div class="mt-8 flex flex-wrap gap-5 justify-center md:justify-start text-sm text-gray-600">
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        Domain & Hosting Include
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        Payment Gateway
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        Dashboard Lengkap
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 flex justify-center animate-on-scroll fade-in-right">
+                <div class="bg-white p-4 rounded-2xl shadow-xl border border-coklat-muda/30">
+                    <img src="https://s.wordpress.com/mshots/v1/https://jamubumarmur.biz.id?w=1200" width="100%" height="auto" class="rounded-xl max-w-full h-auto">
+                    <p class="text-xs text-gray-400 mt-3 text-left">*Contoh website yang pernah kami buat</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Fitur Unggulan Section -->
+    <section id="fitur" class="py-16 md:py-20 px-4" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFF9F0 50%, #FFFFFF 100%);">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12 animate-on-scroll fade-in-up">
+                <span class="text-[#A67B5B] font-semibold tracking-wide">KEUNGGULAN KAMI</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 text-coklat-tua">Fitur Lengkap untuk Bisnis Modern</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto mt-3">Semua kebutuhan website toko online atau company profile modern tersedia dalam satu paket.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+                <div class="bg-cream p-6 rounded-xl card-hover shadow-warm border border-coklat-muda/20 animate-on-scroll fade-in-up delay-100">
+                    <div class="w-12 h-12 bg-[#EBD5B3] rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-[#8B5E3C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-coklat">Payment Gateway</h3>
+                    <p class="text-gray-600 mt-2">Integrasi payment gateway (Midtrans, Tripay dll) memudahkan pelanggan bayar via transfer, QRIS, kartu kredit.</p>
+                </div>
+                <div class="bg-cream p-6 rounded-xl card-hover shadow-warm border border-coklat-muda/20 animate-on-scroll fade-in-up delay-200">
+                    <div class="w-12 h-12 bg-[#EBD5B3] rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-[#8B5E3C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-coklat">Dashboard Admin + User</h3>
+                    <p class="text-gray-600 mt-2">Kelola produk, pesanan, dan pengguna dengan mudah. Dashboard khusus untuk customer melihat histori belanja.</p>
+                </div>
+                <div class="bg-cream p-6 rounded-xl card-hover shadow-warm border border-coklat-muda/20 animate-on-scroll fade-in-up delay-300">
+                    <div class="w-12 h-12 bg-[#EBD5B3] rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-[#8B5E3C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-coklat">Desain Custom / Responsif</h3>
+                    <p class="text-gray-600 mt-2">Tampilan unik sesuai brand Anda, mobile friendly dan modern. Bebas request warna & layout.</p>
+                </div>
+                <div class="bg-cream p-6 rounded-xl card-hover shadow-warm border border-coklat-muda/20 animate-on-scroll fade-in-up delay-400">
+                    <div class="w-12 h-12 bg-[#EBD5B3] rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-[#8B5E3C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-coklat">E-Commerce Lengkap</h3>
+                    <p class="text-gray-600 mt-2">Manajemen produk, stok, varian, gambar produk, pengiriman multi kurir, sistem COD, kode promo otomatis.</p>
+                </div>
+                <div class="bg-cream p-6 rounded-xl card-hover shadow-warm border border-coklat-muda/20 animate-on-scroll fade-in-up delay-500">
+                    <div class="w-12 h-12 bg-[#EBD5B3] rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-[#8B5E3C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-coklat">Domain & Hosting GRATIS</h3>
+                    <p class="text-gray-600 mt-2">Termasuk domain .com/.id pilihan, hosting cepat, SSL gratis. Siap online 24/7 tanpa biaya tahunan tambahan.</p>
+                </div>
+                <div class="bg-cream p-6 rounded-xl card-hover shadow-warm border border-coklat-muda/20 animate-on-scroll fade-in-up delay-600">
+                    <div class="w-12 h-12 bg-[#EBD5B3] rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-[#8B5E3C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-coklat">Banner & Fitur Pesan</h3>
+                    <p class="text-gray-600 mt-2">Hero banner, mid banner, footer banner dapat diatur via CMS. Pengunjung bisa kirim pesan langsung via website.</p>
+                </div>
+            </div>
+            <div class="mt-10 text-center text-gray-500 text-sm flex items-center justify-center gap-2">
+                <svg class="w-5 h-5 text-[#A67B5B]" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
+                </svg>
+                Plus bisa request fitur tambahan (sedikit penyesuaian) sesuai kebutuhan bisnis Anda.
+            </div>
+        </div>
+    </section>
+    
+    <!-- Paket Harga -->
+    <section id="harga" class="py-16 md:py-20 px-4" style="background: linear-gradient(135deg, #FFF9F0 0%, #FFF5EA 50%, #FFF2E6 100%);">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-10 animate-on-scroll fade-in-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-coklat-tua">Pilihan Paket Terjangkau</h2>
+                <p class="text-gray-500 mt-2">Harga flat tanpa biaya tersembunyi, garansi revisi hingga puas.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                
+                <!-- Paket Standar (4jt) - Sekarang sangat kuat -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-coklat-muda/30 transform transition hover:scale-105 animate-on-scroll fade-in-left delay-200">
+                    <div class="p-6 bg-[#FBF5E8] border-b border-coklat-muda/20">
+                        <h3 class="text-2xl font-bold text-coklat">Paket Standar</h3>
+                        <p class="text-gray-500 mt-1">Fitur lengkap untuk toko online & bisnis profesional</p>
+                        <div class="mt-3"><span class="text-4xl font-black text-[#8B5E3C]">Rp4.000.000</span><span class="text-gray-500"> / tahun</span></div>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                Desain custom responsif (hingga 10 halaman)
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                Domain & hosting 1 tahun FREE
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                Payment Gateway lengkap (Transfer, QRIS, Virtual Account, dll)
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                Dashboard admin & user lengkap (grafis + laporan)
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                Manajemen produk lengkap (stok, varian, rak)
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                Fitur pengiriman & COD
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                Banner dynamic (Hero, Mid, Footer)
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                Kode promo, diskon, & flash sale
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                Optimasi SEO dasar + teknis
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                Form pesan & integrasi WhatsApp
+                            </li>
+                        </ul>
+                        <a href="#kontak" class="block text-center mt-6 bg-[#C4A27A] text-white py-3 rounded-lg font-semibold hover:bg-[#A67B5B] transition">Pilih Paket Standar</a>
+                    </div>
+                </div>
+                
+                <!-- Paket Pro (6jt) - Fitur High Utility -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-[#A67B5B] transform transition hover:scale-105 relative animate-on-scroll fade-in-right delay-300">
+                    <div class="absolute top-4 right-6 bg-[#A67B5B] text-white text-sm px-3 py-1 rounded-full flex items-center gap-1">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        Premium
+                    </div>
+                    <div class="p-6 bg-[#FBF5E8] border-b border-coklat-muda/20">
+                        <h3 class="text-2xl font-bold text-coklat">Paket Pro</h3>
+                        <p class="text-gray-500 mt-1">Solusi lengkap untuk toko offline + online hybrid</p>
+                        <div class="mt-3"><span class="text-4xl font-black text-[#8B5E3C]">Rp6.000.000</span><span class="text-gray-500"> / tahun</span></div>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <strong>Semua fitur Paket Standar</strong>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                Sistem Order Meja via QR Code (Dine-in)
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                Fotografi Produk Profesional (setup + editing dasar)
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                Integrasi Google Marketing (Google Ads + Analytics 4)
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                Multi Outlet / Cabang Management
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                Program Loyalitas & Membership
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>Management blog
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                Custom Request Fitur Tambahan (maks 5 fitur)
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                Priority Support + Update Bulanan
+                            </li>
+                        </ul>
+                        <a href="#kontak" class="block text-center mt-6 btn-primary text-white py-3 rounded-lg font-semibold">Pilih Paket Pro</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <p class="text-center text-sm text-gray-500 mt-6">*Harga sudah termasuk domain tahun pertama & hosting. Perpanjangan domain/hosting dapat disesuaikan nanti.</p>
+        </div>
+    </section>
+    
+    <!-- Cara Order (Step by step) -->
+    <section id="cara-order" class="py-16 px-4" style="background: linear-gradient(135deg, #FFFFFF 0%, #FFF9F0 50%, #FFFFFF 100%);">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-10 animate-on-scroll fade-in-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-coklat-tua">Cara Mudah Order Website</h2>
+                <p class="text-gray-500 mt-2">Proses transparan dan cepat, website siap dalam 7-14 hari</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4 text-center">
+                <div class="flex flex-col items-center p-4 animate-on-scroll fade-in-up delay-100">
+                    <div class="w-14 h-14 rounded-full bg-[#EBD5B3] flex items-center justify-center text-xl font-bold text-[#8B5E3C]">1</div>
+                    <h4 class="font-semibold mt-3">Hubungi Kami</h4>
+                    <p class="text-sm text-gray-500">Konsultasi via WA / form</p>
+                </div>
+                <div class="flex flex-col items-center p-4 animate-on-scroll fade-in-up delay-200">
+                    <div class="w-14 h-14 rounded-full bg-[#EBD5B3] flex items-center justify-center text-xl font-bold text-[#8B5E3C]">2</div>
+                    <h4 class="font-semibold mt-3">Isi Form Bisnis</h4>
+                    <p class="text-sm text-gray-500">Kami beri saran desain & fitur</p>
+                </div>
+                <div class="flex flex-col items-center p-4 animate-on-scroll fade-in-up delay-300">
+                    <div class="w-14 h-14 rounded-full bg-[#EBD5B3] flex items-center justify-center text-xl font-bold text-[#8B5E3C]">3</div>
+                    <h4 class="font-semibold mt-3">Approval + DP 50%</h4>
+                    <p class="text-sm text-gray-500">Proposal final disetujui</p>
+                </div>
+                <div class="flex flex-col items-center p-4 animate-on-scroll fade-in-up delay-400">
+                    <div class="w-14 h-14 rounded-full bg-[#EBD5B3] flex items-center justify-center text-xl font-bold text-[#8B5E3C]">4</div>
+                    <h4 class="font-semibold mt-3">Pengerjaan 7-14 Hari</h4>
+                    <p class="text-sm text-gray-500">Progress report berkala</p>
+                </div>
+                <div class="flex flex-col items-center p-4 animate-on-scroll fade-in-up delay-500">
+                    <div class="w-14 h-14 rounded-full bg-[#EBD5B3] flex items-center justify-center text-xl font-bold text-[#8B5E3C]">5</div>
+                    <h4 class="font-semibold mt-3">Pelunasan & Publikasi</h4>
+                    <p class="text-sm text-gray-500">Website live & handover</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Kontak & Form Pemesanan -->
+    <section id="kontak" class="py-20 px-4 relative overflow-hidden" style="background: linear-gradient(135deg, #FFF9F0 0%, #FFF2E6 100%);">
+        <div class="max-w-6xl mx-auto">
+            
+            <!-- Header -->
+            <div class="text-center mb-12 animate-on-scroll fade-in-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-coklat-tua leading-tight">
+                    Siap Punya Website Profesional?
+                </h2>
+                <p class="text-gray-600 mt-3 text-lg max-w-2xl mx-auto">
+                    Isi form berikut atau hubungi langsung untuk konsultasi gratis
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-10">
+                
+                <!-- Kolom Hubungi Kami -->
+                <div class="bg-white p-8 md:p-10 rounded-3xl shadow-xl animate-on-scroll fade-in-left">
+                    <h3 class="text-2xl font-semibold text-coklat mb-6 flex items-center gap-3">
+                        <svg class="w-7 h-7 text-[#A67B5B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        Hubungi Kami
+                    </h3>
+                    
+                    <div class="space-y-6">
+                        <!-- WhatsApp -->
+                        <div class="flex items-center gap-4">
+                            <span class="w-10 h-10 bg-[#EBD5B3] rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-[#8B5E3C]" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="text-sm text-gray-500">WhatsApp</p>
+                                <a href="https://wa.me/6288989546234" target="_blank" class="text-xl font-semibold text-coklat hover:text-green-600 transition">+62 889-8954-6234</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Email -->
+                        <div class="flex items-center gap-4">
+                            <span class="w-10 h-10 bg-[#EBD5B3] rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-[#8B5E3C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="text-sm text-gray-500">Email</p>
+                                <a href="mailto:jagadrenata001@gmail.com" class="text-lg font-medium text-coklat hover:text-[#C4A27A] transition">jagadrenata001@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Alamat -->
+                        <div class="flex items-center gap-4">
+                            <span class="w-10 h-10 bg-[#EBD5B3] rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-[#8B5E3C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="text-sm text-gray-500">Alamat</p>
+                                <p class="text-coklat leading-tight">Caturtunggal, Depok, Sleman<br>Yogyakarta, Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 flex flex-col gap-3">
+                        <a href="https://wa.me/6288989546234?text=Halo%20DigiKarta%2C%20saya%20tertarik%20dengan%20jasa%20website%20UMKM" target="_blank" class="bg-green-600 hover:bg-green-700 text-white py-4 rounded-2xl font-semibold flex items-center justify-center gap-2 transition shadow-lg">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">...</svg>
+                            Chat WhatsApp Sekarang
+                        </a>
+                        
+                        <a href="mailto:halo@digikarta.web.id" class="border-2 border-coklat-muda text-coklat py-4 rounded-2xl font-semibold flex items-center justify-center gap-2 hover:bg-[#F5E6D3] transition">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">...</svg>
+                            Kirim Email
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Kolom Form -->
+                <div class="bg-white p-8 md:p-10 rounded-3xl shadow-xl animate-on-scroll fade-in-right">
+                    <h3 class="text-2xl font-semibold text-coklat mb-6">Form Ketertarikan</h3>
+                    
+                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="space-y-5">
+                        
+                        <!-- Access Key -->
+                        <input type="hidden" name="access_key" value="56c4b745-9ef2-4526-93db-ea1813fedbd0">
+                        
+                        <!-- Subject Email -->
+                        <input type="hidden" name="subject" value="Permintaan Konsultasi Website Baru">
+                        
+                        <!-- Nama -->
+                        <input type="text" name="nama" placeholder="Nama Lengkap *" class="w-full border border-gray-300 rounded-2xl px-5 py-3 focus:border-[#C4A27A] focus:ring-2 focus:ring-[#C4A27A]/30 outline-none transition" required>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            
+                            <!-- Email -->
+                            <input type="email" name="email" placeholder="Email Aktif" class="w-full border border-gray-300 rounded-2xl px-5 py-3 focus:border-[#C4A27A] focus:ring-2 focus:ring-[#C4A27A]/30 outline-none transition" required>
+                            
+                            <!-- WhatsApp -->
+                            <input type="tel" name="whatsapp" placeholder="Nomor WhatsApp *" class="w-full border border-gray-300 rounded-2xl px-5 py-3 focus:border-[#C4A27A] focus:ring-2 focus:ring-[#C4A27A]/30 outline-none transition" required>
+                        </div>
+                        
+                        <!-- Paket -->
+                        <select name="paket" class="w-full border border-gray-300 rounded-2xl px-5 py-3 focus:border-[#C4A27A] focus:ring-2 focus:ring-[#C4A27A]/30 outline-none transition" required>
+                        
+                            <option value="">Pilih Paket</option>
+                            <option value="Paket Standar">Paket Standar (4 Juta)</option>
+                            <option value="Paket Pro">Paket Pro (6 Juta)</option>
+                            <option value="Konsultasi">Masih Konsultasi</option>
+                        </select>
+                        
+                        <!-- Pesan -->
+                        <textarea rows="4" name="pesan" placeholder="Deskripsi bisnis / kebutuhan website Anda..." class="w-full border border-gray-300 rounded-3xl px-5 py-3 focus:border-[#C4A27A] focus:ring-2 focus:ring-[#C4A27A]/30 outline-none transition resize-none"></textarea>
+                        
+                        <!-- Button -->
+                        <button type="submit" class="w-full bg-[#C4A27A] hover:bg-[#A67B5B] text-white font-semibold py-4 rounded-2xl text-lg transition shadow-lg">
+                            Kirim Permintaan Konsultasi
+                        </button>
+                        
+                        <p class="text-center text-xs text-gray-500">
+                            *Kami akan menghubungi Anda maksimal 1x24 jam
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-[#3E2A1F] text-white mt-8">
+        <div class="max-w-7xl mx-auto px-4 py-10 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-[#D2B48C]">DigiKarta</h3>
+                    <p class="text-gray-300 mt-2">Solusi teknologi untuk UMKM, jasa pembuatan website profesional dengan harga terjangkau.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-3">Tautan</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-[#D2B48C]">Beranda</a></li>
+                        <li><a href="#fitur" class="text-gray-300 hover:text-[#D2B48C]">Fitur</a></li>
+                        <li><a href="#harga" class="text-gray-300 hover:text-[#D2B48C]">Harga</a></li>
+                        <li><a href="#cara-order" class="text-gray-300 hover:text-[#D2B48C]">Cara Order</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-3">Kontak</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Email: halo@digikarta.web.id</li>
+                        <li>Telp: +62 889-8954-6234</li>
+                        <li>IG: @digikarta.web.id</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-3">Legal</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-300">© 2026 DigiKarta</li>
+                        <li class="text-gray-300">Garansi revisi & support</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400 text-sm flex items-center justify-center gap-2">
+                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+                </svg>
+                Dibuat untuk mendukung UMKM Indonesia - website cepat, fitur lengkap, dan mudah dikelola.
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Navbar scroll effect + mobile menu toggle
+        const navbar = document.getElementById('navbar');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuBtn = document.getElementById('menuBtn');
+        const iconOpen = document.getElementById('menuIconOpen');
+        const iconClose = document.getElementById('menuIconClose');
+        let mobileOpen = false;
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('nav-scrolled');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+            }
+        });
+        
+        function toggleMobileMenu(open) {
+            if (open) {
+                mobileMenu.style.maxHeight = mobileMenu.scrollHeight + 'px';
+                iconOpen.classList.add('hidden');
+                iconClose.classList.remove('hidden');
+            } else {
+                mobileMenu.style.maxHeight = '0';
+                iconOpen.classList.remove('hidden');
+                iconClose.classList.add('hidden');
+            }
+            mobileOpen = open;
+        }
+        
+        menuBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleMobileMenu(!mobileOpen);
+        });
+        
+        // Close mobile when clicking a link
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                toggleMobileMenu(false);
+            });
+        });
+        
+        // Click outside close
+        document.addEventListener('click', (event) => {
+            if (mobileOpen && !navbar.contains(event.target)) {
+                toggleMobileMenu(false);
+            }
+        });
+        
+        const contactForm = document.getElementById('contactForm');
+        
+        if (contactForm) {
+            contactForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                const formData = new FormData(contactForm);
+                
+                try {
+                    const response = await fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        body: formData
+                    });
+                    
+                    const result = await response.json();
+                    
+                    if (result.success) {
+                        alert('Terima kasih! Tim DigiKarta akan segera menghubungi Anda maksimal 1x24 jam melalui WhatsApp/Email.');
+                        contactForm.reset();
+                    } else {
+                        alert('Gagal mengirim form. Silakan coba lagi.');
+                        console.log(result);
+                    }
+                    
+                } catch (error) {
+                    console.error(error);
+                    alert('Terjadi error saat mengirim form.');
+                }
+            });
+        }
+        
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href === "#" || href === "") return;
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    if (mobileOpen) toggleMobileMenu(false);
+                }
+            });
+        });
+        
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all elements with animate-on-scroll class
+        document.addEventListener('DOMContentLoaded', () => {
+            const animatedElements = document.querySelectorAll('.animate-on-scroll');
+            animatedElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+
+</html>
